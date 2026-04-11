@@ -21,7 +21,7 @@ func main() {
 		for {
 			currentDisplay := uint32(C.GetMouseDisplayID())
 
-			if lastDisplay != 0 && currentDisplay != lastDisplay {
+			if lastDisplay != 0 && currentDisplay != lastDisplay && C.IsMouseButtonDown() == 0 {
 				pid := C.GetActiveAppPidOnDisplay(C.uint(currentDisplay))
 
 				if int(pid) > 0 {

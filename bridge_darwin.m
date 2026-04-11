@@ -62,6 +62,11 @@ int GetActiveAppPidOnDisplay(unsigned int display_id) {
     }
 }
 
+int IsMouseButtonDown(void) {
+    return CGEventSourceButtonState(kCGEventSourceStateCombinedSessionState, kCGMouseButtonLeft) ||
+           CGEventSourceButtonState(kCGEventSourceStateCombinedSessionState, kCGMouseButtonRight) ? 1 : 0;
+}
+
 void FocusAppByPid(int pid) {
     dispatch_async(dispatch_get_main_queue(), ^ {
         @autoreleasepool {
