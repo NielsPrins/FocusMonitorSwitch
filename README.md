@@ -8,3 +8,5 @@ macOS does not do this by default, moving your cursor to another screen does not
 FocusMonitorSwitch removes that extra click.
 
 It runs silently in the background with no Dock icon or menu bar item.
+
+Download the app from the [GitHub releases page](https://github.com/NielsPrins/FocusMonitorSwitch/releases/latest).
