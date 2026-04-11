@@ -1,4 +1,4 @@
-<img src="AppIcon.png" style="border-radius: 14px" width="96" alt="FocusMonitorSwitch icon">
+<img src="AppIcon.png" width="96" alt="FocusMonitorSwitch icon">
 
 # FocusMonitorSwitch
 
